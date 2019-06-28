@@ -14,7 +14,7 @@ async def on_ready():
 async def on_message(message):
   if message.content.startswith('!Fajowo'):
    channel = message.channel
-   await channel.send(time.strftime(':gorilla: :gorilla: :gorilla: :gorilla: :gorilla: :gorilla: :gorilla: '))
+   await channel.send(time.strftime('Hello World'))
 
 		
 client.run(str(os.environ.get('BOT_TOKEN')))
