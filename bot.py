@@ -12,7 +12,7 @@ async def on_ready():
 	print('Ready boy')
 @client.event
 async def on_message(message):
-  if message.content.startswith('!Fajowo'):
+  if message.content.startswith('!bait'):
    channel = message.channel
    await channel.send(time.strftime('Hello World'))
 
