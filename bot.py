@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext.commands import Bot
 from discord.ext import commands
 import asyncio
@@ -16,4 +17,4 @@ async def on_message(message):
    await channel.send(time.strftime(':gorilla: :gorilla: :gorilla: :gorilla: :gorilla: :gorilla: :gorilla: '))
 
 		
-client.run()
+client.run(str(os.environ.get('BOT_TOKEN')))
